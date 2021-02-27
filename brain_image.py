@@ -13,3 +13,6 @@ plt.imshow(brain_image)
 plt.title('Display Image read using imread()') 
 plt.axis('off')
 plt.show()
+
+# find the dimension of the image
+brain_image.shape
