@@ -29,12 +29,12 @@ plt.show()   # show the image as output
 from scipy import ndimage
 level_1 = ndimage.gaussian_filter(brain_image, sigma=5)
 plt.imshow(level_1)
-plt.show()     # show the image as output
+plt.show()     # show the image as output and realize that you need to use reverse greyscale colormap
 
 plt.imshow(level_1, cmap='Greys_r')      # use the reverse greyscale colormap for better viewing
-plt.show()     # show the image as output
+plt.show()     
 
-plt.hist(level_1, bins=10)
+plt.hist(level_1, bins=10)               # plot the histogram   
 plt.show()    # show the image as output
 
 # second level of gaussian smoothing
@@ -44,7 +44,7 @@ plt.imshow(level_2)
 plt.imshow(level_2, cmap='Greys_r')     # use the reverse greyscale colormap
 plt.show()
 
-plt.hist(level_2, bins=10)
+plt.hist(level_2, bins=10)              # plot the histogram   
 plt.show()       # show the image as output
 
 # third level of gaussian smoothing
@@ -54,7 +54,7 @@ plt.imshow(level_3)
 plt.imshow(level_3, cmap='Greys_r')    # use the reverse greyscale colormap
 plt.show()
 
-plt.hist(level_3, bins=10)
+plt.hist(level_3, bins=10)             # plot the histogram   
 plt.show()        # show the image as output
 
 # fourth level of gaussian smoothing
@@ -64,7 +64,7 @@ plt.imshow(level_4)
 plt.imshow(level_4, cmap='Greys_r')    # use the reverse greyscale colormap
 plt.show()
 
-plt.hist(level_4, bins=10)
+plt.hist(level_4, bins=10)             # plot the histogram   
 plt.show()        # show the image as output
 
 # fifth level of gaussian smoothing
@@ -74,7 +74,7 @@ plt.imshow(level_5)
 plt.imshow(level_5, cmap='Greys_r')     # use the reverse greyscale colormap
 plt.show()
 
-plt.hist(level_5, bins=10)
+plt.hist(level_5, bins=10)             # plot the histogram   
 plt.show()        # show the image as output
 
 # sixth level of gaussian smoothing
@@ -84,5 +84,5 @@ plt.imshow(level_6)
 plt.imshow(level_6, cmap='Greys_r')    # use the reverse greyscale colormap
 plt.show()
 
-plt.hist(level_6, bins=10)
+plt.hist(level_6, bins=10)             # plot the histogram   
 plt.show()        # show the image as output
