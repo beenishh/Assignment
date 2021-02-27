@@ -20,3 +20,7 @@ brain_image.shape
 # use the reverse greyscale colormap 
 plt.imshow(brain_image, cmap='Greys_r')
 plt.show()    # show the image as output
+
+# plot histogram of the image
+plt.hist(brain_image, bins=10)
+plt.show()   # show the image as output
