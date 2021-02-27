@@ -77,7 +77,7 @@ plt.show()
 plt.hist(level_5, bins=10)             # plot the histogram   
 plt.show()        # show the image as output
 
-# sixth level of gaussian smoothing
+# sixth level of gaussian smoothing 
 level_6 = ndimage.gaussian_filter(brain_image, sigma=50)
 plt.imshow(level_6)
 
