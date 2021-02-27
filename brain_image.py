@@ -24,3 +24,16 @@ plt.show()    # show the image as output
 # plot histogram of the image
 plt.hist(brain_image, bins=10)
 plt.show()   # show the image as output
+
+# perform gaussian smoothing on the image 
+from scipy import ndimage
+level_1 = ndimage.gaussian_filter(brain_image, sigma=5)
+plt.imshow(level_1)
+plt.show()     # show the image as output
+
+plt.imshow(level_1, cmap='Greys_r')  # use the reverse greyscale colormap for better viewing
+plt.show()     # show the image as output
+
+plt.hist(level_1, bins=10)
+plt.show()    # show the image as output
+
