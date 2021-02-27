@@ -67,3 +67,12 @@ plt.show()
 plt.hist(level_4, bins=10)
 plt.show()        # show the image as output
 
+# fifth level of gaussian smoothing
+level_5 = ndimage.gaussian_filter(brain_image, sigma=40)
+plt.imshow(level_5)
+
+plt.imshow(level_5, cmap='Greys_r')     # use the reverse greyscale colormap
+plt.show()
+
+plt.hist(level_5, bins=10)
+plt.show()        # show the image as output
